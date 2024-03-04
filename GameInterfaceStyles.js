@@ -122,6 +122,7 @@ const GameInterfaceStyles = StyleSheet.create({
     
       logo: {
         width: 87, 
+        height: 70,
         marginRight:20,
       },
     
