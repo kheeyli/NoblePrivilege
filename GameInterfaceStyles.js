@@ -40,18 +40,18 @@ const GameInterfaceStyles = StyleSheet.create({
     
       noblePrivilegeText: {
         color: 'white',
-        fontSize: 22,
+        fontSize: 25,
+        fontWeight:'bold',
         position: 'absolute',
-        left: 18, 
-        top: 25, 
+        left: 22, 
+        top: 22, 
       },
     
       PrivilageText: {
         color: 'white',
         fontSize: 15,
-        fontWeight: 'bold',
         position: 'absolute',
-        left: 120, 
+        left: 125, 
         top: 9, 
       },
     
@@ -61,16 +61,8 @@ const GameInterfaceStyles = StyleSheet.create({
         marginLeft:20,
       },
     
+    
       PrivilageInfoText1 :{
-        fontSize: 15,
-        fontWeight: 'bold',
-        position: 'absolute',
-        left: 30, 
-        top: 180, 
-    
-      },
-    
-      PrivilageInfoText2 :{
         fontSize: 15,
         fontWeight: 'bold',
         position: 'absolute',
@@ -96,42 +88,44 @@ const GameInterfaceStyles = StyleSheet.create({
     
       chat: {
         position: 'absolute',
-        top: 110,
-        right: 20,
+        top: 96,
+        right: 7,
         zIndex: 1,
-        width:90,
-        height:85
+        width:113,
+        height:112
       },
+
+
       badge: {
         position: 'absolute',
-        top: 110,
-        right: 20,
+        top: 83.5,
+        right: 2,
         zIndex: 1,
-        width:90,
-        height:85
+        width:125,
+        height:125,
       },
     
       frame: {
         position: 'absolute',
-        top: 110,
-        right: 20,
+        top: 88,
+        right: 3,
         zIndex: 1,
-        width:90,
-        height:85
+        width:122,
+        height:122,
       },
     
       logo: {
-        width: 87, 
-        height: 70,
-        marginRight:20,
+        width: 100, 
+        height: 100,
+        marginRight:8,
       },
     
       image: {
         position: 'absolute',
-        right: 40, 
-        top: 35, 
-        width: 18,
-        height: 18, 
+        right: 27, 
+        top: 43, 
+        width: 14,
+        height: 14, 
         
         tintColor:'lightgray',
         backgroundColor: "transparent"
@@ -152,10 +146,10 @@ const GameInterfaceStyles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'flex-start',
         alignItems: 'center',
-        marginTop: 10, // Adjust as needed
+        marginTop: 10,
         backgroundColor: 'rgba(255, 255, 255, 0.2)', // Transparent with a hint of white
         width: '100%',
-        height: 30, // Adjust as needed
+        height: 30,
       },
     
       // 3 vertical
@@ -170,9 +164,46 @@ const GameInterfaceStyles = StyleSheet.create({
     
     verticalItem: {
         backgroundColor: 'rgba(255, 255, 255, 0.3)',
-        width: '32%', // Adjust the width as needed
-        height: 370, // Adjust the height as needed
+        width: '32%', 
+        height: 370, 
         margin:2, 
+    },
+
+    innerVerticalContainer: {
+      backgroundColor: 'white', 
+      borderColor: 'rgba(255, 255, 255, 0.8)', 
+      borderWidth: 1, 
+      borderRadius: 90,
+      marginLeft:12,
+      position: 'absolute',
+      top: 98,
+      right: 11.5,
+      zIndex: 1,
+      width: '82%',
+      height: 104,
+    },
+
+    innerVerticalContainerFrame: {
+      backgroundColor: 'transparent', 
+      borderColor: 'rgba(255, 255, 255, 0.8)', 
+      borderWidth: 2, 
+      borderRadius: 90,
+      marginLeft:12,
+      position: 'absolute',
+      top: 98.5,
+      right: 6,
+      zIndex: 1,
+      width: '82%',
+      height: 114,
+      shadowColor: 'white', 
+      shadowOpacity: 1, 
+  
+      shadowOffset: {
+        width: 0,
+        height: 0,
+      },
+      shadowRadius: 100, 
+      elevation:1,
     },
     
     chatroomContainer: {
@@ -205,6 +236,9 @@ const GameInterfaceStyles = StyleSheet.create({
       width: '100%',
       height: 55,
     },
+
+
+
     
 
 });

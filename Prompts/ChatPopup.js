@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Modal, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
-const closeIcon = require('vertics/images/close.png');
+const closeIcon = require('../images/close.png');
 
 const ChatPopup = ({ isVisible, onClose }) => {
   return (
@@ -51,15 +51,12 @@ const styles = StyleSheet.create({
         shadowRadius: 100, 
         elevation: 15, 
       },
-      
-      
-      
+           
       closeButton: {
         position: 'absolute',
         top: 5,
         right: 5,
         backgroundColor: 'transparent',
-        tintColor: 'gray',
       },
 });
 

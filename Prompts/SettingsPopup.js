@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Modal, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
-const closeIcon = require('vertics/images/close.png'); 
+const closeIcon = require('../images/close.png'); 
 
 const SettingsPopup = ({ isVisible, onClose }) => {
   return (
@@ -28,12 +28,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   popupContent: {
-    backgroundColor: '#122653', // ahint of #0B234A
+    backgroundColor: '#122653', 
     padding: 20,
     alignItems: 'center',
     width: '90%',
     height: 250,
     borderRadius: 2,
+    borderColor: 'rgba(255, 255, 255, 0.5)', 
+    borderWidth: 0.1, 
+    shadowColor: 'gray',
+    shadowOpacity: 1, 
+
+    shadowOffset: {
+      width: 0,
+      height: 0,
+    },
+    shadowRadius: 60,
+    elevation: 5, 
   },
   
   closeButton: {

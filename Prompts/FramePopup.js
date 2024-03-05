@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, Modal, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
-const closeIcon = require('vertics/images/close.png');
-const frameImage = require('vertics/images/framepop.png');
+const closeIcon = require('../images/close.png');
+const frameImage = require('../images/AvatarFrame.png');
 
 const FramePopup = ({ isVisible, onClose }) => {
   return (
@@ -61,12 +61,12 @@ const styles = StyleSheet.create({
     tintColor: 'gray',
   },
   frameImage: {
-    width: 230, 
-    height: 230, 
+    width: 200, 
+    height: 200, 
     marginBottom: 20, 
     position: 'absolute',
     top: 50,
-    right: 75,
+    right: 87,
     zIndex: 1,
   },
 });

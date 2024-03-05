@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Modal, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
-const closeIcon = require('vertics/images/close.png'); 
+const closeIcon = require('../images/close.png'); 
 
 const ExtraPopup = ({ isVisible, onClose }) => {
   return (

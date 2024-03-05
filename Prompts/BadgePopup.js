@@ -1,14 +1,16 @@
 import React from 'react';
 import { View, Text, Modal, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
-const closeIcon = require('vertics/images/close.png');
-const badgeImage = require('vertics/images/Badgepop.png');
+const closeIcon = require('../images/close.png');
+const badgeImage = require('../images/BadgeIcon.png');
+const userImage = require('../images/userIcon.png'); 
 
 const BadgePopup = ({ isVisible, onClose }) => {
   return (
     <Modal animationType="slide" transparent visible={isVisible} onRequestClose={onClose}>
       <View style={styles.popupContainer}>
         <View style={styles.popupContent}>
+          <Image source={userImage} style={styles.userImage} />
           <Image source={badgeImage} style={styles.badgeImage} />
           <Text style={styles.popupText}>BADGE</Text>
           <TouchableOpacity onPress={onClose} style={styles.closeButton}>
@@ -66,12 +68,21 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   badgeImage: {
-    width: 250, 
-    height: 250, 
+    width: 70, 
+    height: 65, 
     marginBottom: 20,
     position: 'absolute',
-    top: 50,
-    right: 75,
+    top: 65,
+    right: 220,
+    zIndex: 1,
+  },
+  userImage: {
+    width: 180, 
+    height: 180, 
+    marginBottom: 20,
+    position: 'absolute',
+    top: 75,
+    right: 100,
     zIndex: 1,
   },
 });
